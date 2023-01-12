@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap");
 
+
+:root{
+  --main-color: #594545;
+  /* --second-color: #775050; */
+  --second-color: #513d3d;
+  --third-color:#9E7676;
+  --pp: #343541;
+  --cc:#85586F;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +19,14 @@
 
 body {
   /* background: #343541; */
-  background: #85586F;
+  background: var(--main-color);
 }
 
 #app {
   width: 100vw;
   height: 100vh;
-  background: #343541;
-  background: #85586F;
+  background: var(--main-color);
+  background: var(--main-color);
 
   display: flex;
   flex-direction: column;
@@ -63,7 +73,7 @@ body {
   #app {
     width: 100vw;
     height: 93vh;
-    background: #85586F;
+    background: var(--main-color);
   
     display: flex;
     flex-direction: column;
@@ -83,7 +93,7 @@ body {
 }
 
 .ai {
-  background: #764e62;
+  background: var(--second-color);
 }
 
 .chat {
@@ -150,8 +160,7 @@ form {
   max-width: 1280px;
   margin: 0 auto;
   padding: 10px;
-  background: #40414F;
-  background: #764e62;
+  background: var(--second-color);
   color: white;
   display: flex;
   flex-direction: row;
